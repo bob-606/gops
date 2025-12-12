@@ -1,0 +1,29 @@
+graph TB
+    subgraph BEFORE["BEFORE: Basic (4 L1s only)"]
+        B1["BTC"]
+        B2["ETH"]
+        B3["TRON"]
+        B4["BNB"]
+        BS["USDT"]
+    end
+    
+    subgraph AFTER["AFTER: Enterprise (4 L1s + 3 L2s + Solana + thousands of tokens)"]
+        L1["4 L1 Chains<br/>BTC | ETH | TRON | BNB"]
+        L2["3 L2 Networks<br/>Polygon | Arbitrum | Optimism"]
+        SOL["Solana<br/>+ Thousands of Tokens"]
+        ST["Stablecoins<br/>USDT | USDC | DAI"]
+        
+        API["🔥 Unified API Gateway<br/>(Token-agnostic routing)"]
+        
+        L1 --> API
+        L2 --> API
+        SOL --> API
+        ST --> API
+        
+        API --> Settlement["Automated Settlement<br/>(Cross-chain)"]
+        Settlement --> Compliance["Compliance Engine<br/>(15+ jurisdictions)"]
+    end
+    
+    BEFORE -->|"12-month transformation"| AFTER
+    
+    style AFTER fill:#00C7B7,color:#fff,stroke:#000,stroke-width:3px
