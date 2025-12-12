@@ -1,23 +1,25 @@
-timeline
-    title "Solana & Token Ecosystem Dominance"
-    
+gantt
+    title Solana & Token Ecosystem Dominance
+    dateFormat  MM-YYYY
+    axisFormat %m-%Y
+
     section Phase 1: Foundation (Done)
-        Month 0-12 : 4 L1s (BTC, ETH, TRON, BNB)
-        Month 0-12 : 3 L2s (Polygon, Arbitrum, Optimism)
-        Month 0-12 : Solana basic integration
-        Month 0-12 : $567K/month Web3 revenue
-    
+    4 L1s (BTC, ETH, TRON, BNB)    :done, p1l1, 01-2025, 12M
+    3 L2s (Polygon, Arbitrum, Optimism) :done, p1l2, 01-2025, 12M
+    Solana basic integration     :done, p1sol, 01-2025, 12M
+    $567K/month Web3 revenue     :done, p1rev, 01-2025, 12M
+
     section Phase 2: Solana Scaling
-        Month 13-15 : Integrate 1000+ SPL tokens
-        Month 13-15 : AI token discovery system
-        Month 13-15 : Community token listing
-        Month 16-18 : Support 5000+ tokens
-        Month 16-18 : Become Solana betting leader
-        Month 16-18 : Token trading features
-    
+    Integrate 1000+ SPL tokens   :active, p2spl, 01-2026, 3M
+    AI token discovery system    :active, p2ai, 01-2026, 3M
+    Community token listing      :active, p2list, 01-2026, 3M
+    Support 5000+ tokens         :p2tokens, 04-2026, 3M
+    Become Solana betting leader :p2leader, 04-2026, 3M
+    Token trading features       :p2trade, 04-2026, 3M
+
     section Phase 3: Diversification
-        Month 19-24 : Commodity assets (PAXG, XAUT)
-        Month 19-24 : BTC L2s (Lightning, Stacks)
-        Month 19-24 : Polygon/Arbitrum token scaling
-        Month 19-24 : 30+ markets
-        Month 19-24 : $1-2M/month Web3 revenue
+    Commodity assets (PAXG, XAUT) :crit, p3commodity, 07-2026, 6M
+    BTC L2s (Lightning, Stacks)  :crit, p3btc, 07-2026, 6M
+    Polygon/Arbitrum scaling     :crit, p3l2, 07-2026, 6M
+    30+ markets                  :crit, p3markets, 07-2026, 6M
+    $1-2M/month Web3 revenue     :crit, p3rev, 07-2026, 6M
