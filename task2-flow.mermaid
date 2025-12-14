@@ -1,0 +1,22 @@
+graph TD
+    A["🚩 Detection<br/>CS Team<br/>Identify Red Flags<br/>Tag Ticket"] -->|Escalate| B["🕵️ Investigation<br/>Compliance Manager<br/>Review Evidence<br/>Determine 'Reasonable Belief'"]
+    
+    B -->|Decision Point| C{Place Hold?}
+    
+    C -->|YES| D["🛑 Hold & Notify<br/>Ops/Legal<br/>SLA: 2 Days<br/>Notify Customer + Trusted Contact"]
+    
+    C -->|NO| E["✅ Standard Process<br/>No Hold Placed"]
+    
+    D -->|Continue| F["⏱️ Resolution<br/>Investment Lead<br/>Hold expires 15 days<br/>or is extended"]
+    
+    E -->|End| G["Process Complete"]
+    F -->|End| H["Process Complete"]
+    
+    style A fill:#dbeafe,stroke:#1e40af,stroke-width:2px
+    style B fill:#d1fae5,stroke:#065f46,stroke-width:2px
+    style C fill:#fef3c7,stroke:#92400e,stroke-width:2px
+    style D fill:#fee2e2,stroke:#991b1b,stroke-width:2px
+    style E fill:#ecfdf5,stroke:#065f46,stroke-width:2px
+    style F fill:#fef3c7,stroke:#92400e,stroke-width:2px
+    style G fill:#ecfdf5,stroke:#065f46,stroke-width:2px
+    style H fill:#ecfdf5,stroke:#065f46,stroke-width:2px
